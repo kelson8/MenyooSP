@@ -21,6 +21,9 @@
 #define GAME_PLAYERCOUNT 30
 
 
+// Add in my custom changes, toggleable here
+#define KCTESTMENU
+#define CUSTOM_CODE
 
 
 

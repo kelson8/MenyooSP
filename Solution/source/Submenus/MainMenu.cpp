@@ -32,6 +32,10 @@ namespace sub
 		AddOption("Object Spooner", null, nullFunc, SUB::SPOONER_MAIN);
 		//AddOption("Lighting Options", null, nullFunc, SUB::OBJECTSPAWNER_LIGHTINGOPS);
 		AddOption("Misc Options", null, nullFunc, SUB::MISCOPS);
+#ifdef CUSTOM_CODE
+		AddOption("Test Options", null, nullFunc, SUB::KCTEST);
+#endif
+
 		AddOption("Settings", null, nullFunc, SUB::SETTINGS);
 
 		Static_240 = PLAYER_ID();

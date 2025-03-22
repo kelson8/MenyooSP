@@ -55,6 +55,8 @@
 #include "..\Submenus\Spooner\Submenus.h"
 #include "..\Submenus\Spooner\Submenus_TaskSequence.h"
 
+#include "KCTestOptions.h"
+
 
 void Menu::submenu_switch()
 {
@@ -291,6 +293,10 @@ void Menu::submenu_switch()
 	case SUB::SPSTATMANAGER:						sub::SpStatManager_catind::Sub_SpStatManager(); break;
 	case SUB::SPSTATMANAGER_INCHAR:					sub::SpStatManager_catind::Sub_InChar(); break;
 	case SUB::SPSTATMANAGER_INCHAR_INLIST:			sub::SpStatManager_catind::Sub_InChar_InList(); break;
+
+#ifdef CUSTOM_CODE
+	case SUB::KCTEST: sub::SpKCOptions_catind::Sub_SpKcTest(); break;
+#endif
 	}
 }
 

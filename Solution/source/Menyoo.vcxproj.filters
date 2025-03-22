@@ -313,6 +313,10 @@
     <ClCompile Include="Menu\Language.cpp">
       <Filter>Menu</Filter>
     </ClCompile>
+    <ClCompile Include="Memory\Hooking.cpp" />
+    <ClCompile Include="Submenus\Extras\KCTestOptions.cpp">
+      <Filter>Submenus\Extras</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Util\ExePath.h">
@@ -643,6 +647,10 @@
     <ClInclude Include="Menu\Language.h">
       <Filter>Menu</Filter>
     </ClInclude>
+    <ClInclude Include="Memory\Hooking.h" />
+    <ClInclude Include="Submenus\Extras\KCTestOptions.h">
+      <Filter>Submenus\Extras</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Submenus">
@@ -704,6 +712,9 @@
     </Filter>
     <Filter Include="_external">
       <UniqueIdentifier>{a78b4725-1807-4c82-90fb-f13301a71b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Submenus\Extras">
+      <UniqueIdentifier>{55305b86-47fb-4074-804e-b891cd1b0b04}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
