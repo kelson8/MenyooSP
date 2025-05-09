@@ -317,6 +317,12 @@
     <ClCompile Include="Submenus\Extras\KCTestOptions.cpp">
       <Filter>Submenus\Extras</Filter>
     </ClCompile>
+    <ClCompile Include="Scripting\Extras\KCTestScripts.cpp">
+      <Filter>Scripting\Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\Memory.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Util\ExePath.h">
@@ -651,6 +657,12 @@
     <ClInclude Include="Submenus\Extras\KCTestOptions.h">
       <Filter>Submenus\Extras</Filter>
     </ClInclude>
+    <ClInclude Include="Scripting\Extras\KCTestScripts.h">
+      <Filter>Scripting\Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\Memory.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Submenus">
@@ -715,6 +727,9 @@
     </Filter>
     <Filter Include="Submenus\Extras">
       <UniqueIdentifier>{55305b86-47fb-4074-804e-b891cd1b0b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripting\Extras">
+      <UniqueIdentifier>{167dd666-7932-41d1-954d-9af9d4a325ea}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

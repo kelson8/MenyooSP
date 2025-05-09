@@ -53,6 +53,8 @@ Credit to itsjustcurtis on GitHub for the Menyoo mod menu project: https://githu
 
 This fork wouldn't be possible without their work and the original author MAFINS here: https://github.com/MAFINS/MenyooSP
 
+Credit to user gta-chaos-mod on GitHub for some of the memory stuff, Memory/Memory.cpp and Memory/Memory.h: https://github.com/gta-chaos-mod/ChaosModV 
+
 ## License
 The majority of the source code is licensed under the [GNU GPL v3](LICENSE.txt) license.
 Source content taken from other projects is tagged with the respective license(s) wherever found.

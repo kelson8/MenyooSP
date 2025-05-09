@@ -75,6 +75,10 @@
 #include "..\Submenus\Spooner\EntityManagement.h"
 #include "..\Submenus\CutscenePlayer.h"
 
+#ifdef CUSTOM_CODE
+#include "..\Scripting\Extras\KCTestScripts.h"
+#endif
+
 #include <Windows.h>
 #include <thread>
 #include <string>
@@ -2822,6 +2826,10 @@ float normalisehsv(int h, int s, int v)
 
 #pragma endregion
 
+// TODO Look into using this to run stuff every tick like in the Chaos Mod.
+
+
+// I can use this for my KCTestScripts.h loops, possibly for drawing a scaleform to the screen.
 void Menu::loops()
 {
 	//_programTick = GetTickCount() - _initialProgramTick;
@@ -2859,6 +2867,13 @@ void Menu::loops()
 	_RopeGun_::g_ropeGun.Tick();
 	sub::AnimalRiding_catind::Tick();//sub::AnimalRiding_catind::g_animalRidingMode.Tick();
 	_Gta2Cam_::g_gta2Cam.Tick();
+
+	// New
+#ifdef CUSTOM_CODE
+	// TODO Test this.
+	// This works for loading a scaleform, I had to load it in first.
+	sub::KcTestScripts::Scaleforms::DrawScaleform();
+#endif
 
 	set_Ptfxlop_tick();
 
