@@ -204,13 +204,13 @@ namespace sub {
 		}
 
 		// Oops, I was using the player ped instead of the ID for the wanted levels, now these work fine.
-		void Give6Stars()
+		void Give5Stars()
 		{
 			int myPlayer = PLAYER_ID();
 			int player = GET_PLAYER_PED(myPlayer);
 			if (DOES_ENTITY_EXIST(player))
 			{
-				SET_PLAYER_WANTED_LEVEL(myPlayer, 6, false);
+				SET_PLAYER_WANTED_LEVEL(myPlayer, 5, false);
 				SET_PLAYER_WANTED_LEVEL_NOW(myPlayer, false);
 			}
 		}
@@ -317,7 +317,7 @@ namespace sub {
 			//AddOption("Bomb", null, nullFunc, );
 			AddOption("Blow up player", null, SpKCOptions_catind::BlowupPlayer);
 
-			AddOption("Get 6 stars", null, SpKCOptions_catind::Give6Stars);
+			AddOption("Get 5 stars", null, SpKCOptions_catind::Give5Stars);
 			AddOption("Clear cops", null, SpKCOptions_catind::ClearWantedLevel);
 
 
