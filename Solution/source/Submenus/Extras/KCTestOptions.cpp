@@ -321,16 +321,25 @@ namespace sub {
 			AddOption("Clear cops", null, SpKCOptions_catind::ClearWantedLevel);
 
 
-			// TODO Test this.
 			AddOption("Spawn orange ball", null, SpKCOptions_catind::SpawnOrangeBall);
 
 			AddBreak("Clear area");
 			AddOption("Clear objects", null, ClearAreaOfObjects);
 
 #ifdef NEW_TEST
+			AddBreak("Vehicles");
 			AddOption("Burst all car tires", null, sub::KcTestScripts::BurstAllTires);
+			
+			AddBreak("Scaleforms");
 			AddOption("Enable scaleform test", null, sub::KcTestScripts::Scaleforms::EnableScaleform);
 			AddOption("Disable scaleform test", null, sub::KcTestScripts::Scaleforms::DisableScaleform);
+
+			// These seem to work well
+			AddBreak("Phone");
+			AddOption("Enable phone", null, sub::KcTestScripts::PhoneTests::EnablePhone);
+			AddOption("Disable phone", null, sub::KcTestScripts::PhoneTests::DisablePhone);
+
+
 #endif
 		}
 

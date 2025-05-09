@@ -82,6 +82,46 @@ namespace sub
 			return Vector3(0,0,0);
 		}
 
+#pragma region PhoneTests
+
+		namespace PhoneTests {
+
+			/// <summary>
+			/// Terminate the cellphone_controller script if it's loaded.
+			/// </summary>
+			void DisablePhone()
+			{
+				if (HAS_SCRIPT_LOADED("cellphone_controller"))
+				{
+					TERMINATE_ALL_SCRIPTS_WITH_THIS_NAME("cellphone_controller");
+				}
+				
+			}
+
+			/// <summary>
+			/// First, this requests the cellphone_controller script and waits on it to load.
+			/// Then it starts the cellphone_controller script.
+			/// </summary>
+			void EnablePhone()
+			{
+				const char* cellphoneControllerScript = "cellphone_controller";
+
+				// Request the script for loading.
+				REQUEST_SCRIPT(cellphoneControllerScript);
+
+				// Wait on the script to load
+				if (!HAS_SCRIPT_LOADED(cellphoneControllerScript))
+				{
+					WAIT(0);
+				}
+
+				// Start the script, stack size obtained from main_persistent.c here: https://github.com/root-cause/v-decompiled-scripts/blob/master/main_persistent.c
+				START_NEW_SCRIPT("cellphone_controller", 1424);
+			}
+		}
+
+#pragma endregion
+
 #pragma region ScaleformTests
 
 		namespace Scaleforms 

@@ -16,6 +16,12 @@ namespace sub
 		Vehicle GetPlayerVehicle();
 		Vector3 GetWaypointCoords();
 
+		namespace PhoneTests
+		{
+			void DisablePhone();
+			void EnablePhone();
+		}
+
 		namespace Scaleforms 
 		{
 			//bool drawScaleform;
